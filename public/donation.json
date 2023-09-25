@@ -3,132 +3,132 @@
         "id": 1,
         "category": "Health",
         "title": "Medical Supplies for the Needy",
-        "bg_color": "#FFC0C0",
-        "text_color": "#FFFFFF",
-        "title_bgColor": "#FF9090",
+        "bg_color": "blue-50",
+        "text_color": "blue-500",
+        "title_bgColor": "blue-200",
         "price": 50,
         "description": "Contribute to the health and well-being of those in need by providing essential medical supplies.",
-        "bg_img": "https://example.com/health_bg.jpg"
+        "bg_img": "https://i.ibb.co/YfDhhNB/volunteers-blood-donation-woman-chair-gives-bloody-serum-people-help-health-care-plasma-donors-proce.jpg"
     },
     {
         "id": 2,
         "category": "Education",
         "title": "Support Underprivileged Students",
-        "bg_color": "#FFC0C0",
-        "text_color": "#000000",
-        "title_bgColor": "#FF9090",
+        "bg_color": "red-50",
+        "text_color": "red-500",
+        "title_bgColor": "red-200",
         "price": 25,
         "description": "Your donation will help provide books and education materials to underprivileged students in need.",
-        "bg_img": "https://example.com/education_bg.jpg"
+        "bg_img": "https://i.ibb.co/K99CjDQ/Adobe-Stock-393375244.jpg"
     },
     {
         "id": 3,
         "category": "Clothing",
         "title": "Warm Clothes for Winter",
-        "bg_color": "#FFC0C0",
-        "text_color": "#000000",
-        "title_bgColor": "#FF9090",
+        "bg_color": "cyan-50",
+        "text_color": "cyan-500",
+        "title_bgColor": "cyan-200",
         "price": 20,
         "description": "Provide warm clothing to those in need during the cold winter months.",
-        "bg_img": "https://example.com/clothing_bg.jpg"
+        "bg_img": "https://i.ibb.co/VjHJQ4n/Warm-Clothing-537x374-1.jpg"
     },
     {
         "id": 4,
         "category": "Food",
         "title": "Feed the Hungry",
-        "bg_color": "#FFC0C0",
-        "text_color": "#FFFFFF",
-        "title_bgColor": "#FF9090",
+        "bg_color": "amber-50",
+        "text_color": "amber-500",
+        "title_bgColor": "amber-100",
         "price": 30,
         "description": "Help combat hunger by providing food assistance to families and individuals in need.",
-        "bg_img": "https://example.com/food_bg.jpg"
+        "bg_img": "https://i.ibb.co/hdH77Lx/20230626105415.png"
     },
     {
         "id": 5,
         "category": "Health",
         "title": "Medicine for Low-Income Families",
-        "bg_color": "#FFC0C0",
-        "text_color": "#000000",
-        "title_bgColor": "#FF9090",
+        "bg_color": "blue-50",
+        "text_color": "blue-500",
+        "title_bgColor": "blue-200",
         "price": 40,
         "description": "Ensure that low-income families have access to necessary medications and healthcare.",
-        "bg_img": "https://example.com/health_bg.jpg"
+        "bg_img": "https://i.ibb.co/qmnX4gN/00cystic-fibrosis-vertex-01b-vfjk-video-Sixteen-By-Nine3000.jpg"
     },
     {
         "id": 6,
         "category": "Education",
         "title": "Scholarships for Promising Students",
-        "bg_color": "#FFC0C0",
-        "text_color": "#FFFFFF",
-        "title_bgColor": "#FF9090",
+        "bg_color": "red-50",
+        "text_color": "red-500",
+        "title_bgColor": "red-200",
         "price": 60,
         "description": "Enable talented and deserving students to pursue their dreams through scholarships and educational opportunities.",
-        "bg_img": "https://example.com/education_bg.jpg"
+        "bg_img": "https://i.ibb.co/BGKs3wq/mgmt-promise-leaders-web.jpg"
     },
     {
         "id": 7,
         "category": "Clothing",
         "title": "Clothing Drive for Kids",
-        "bg_color": "#FFC0C0",
-        "text_color": "#000000",
-        "title_bgColor": "#FF9090",
+        "bg_color": "cyan-50",
+        "text_color": "cyan-500",
+        "title_bgColor": "cyan-200",
         "price": 15,
         "description": "Collect and distribute clothing to children in need within your community.",
-        "bg_img": "https://example.com/clothing_bg.jpg"
+        "bg_img": "https://i.ibb.co/bjVL3HG/CTK-RGB.png"
     },
     {
         "id": 8,
         "category": "Food",
         "title": "Emergency Food Relief",
-        "bg_color": "#FFC0C0",
-        "text_color": "#FFFFFF",
-        "title_bgColor": "#FF9090",
+        "bg_color": "amber-50",
+        "text_color": "amber-500",
+        "title_bgColor": "amber-100",
         "price": 35,
         "description": "Provide immediate food assistance to individuals facing hunger during crises.",
-        "bg_img": "https://example.com/food_bg.jpg"
+        "bg_img": "https://i.ibb.co/pZn4MsF/blog-feature-graphics-6.png"
     },
     {
         "id": 9,
         "category": "Health",
         "title": "Support Mental Health Services",
-        "bg_color": "#FFC0C0",
-        "text_color": "#000000",
-        "title_bgColor": "#FF9090",
+        "bg_color": "blue-50",
+        "text_color": "blue-500",
+        "title_bgColor": "blue-200",
         "price": 45,
         "description": "Help fund mental health programs and services for those in need of support.",
-        "bg_img": "https://example.com/health_bg.jpg"
+        "bg_img": "https://i.ibb.co/NVD8qmD/dreamstime-m-43818865.jpg"
     },
     {
         "id": 10,
         "category": "Education",
         "title": "Technology for Schools",
-        "bg_color": "#FFC0C0",
-        "text_color": "#FFFFFF",
-        "title_bgColor": "#FF9090",
+        "bg_color": "red-50",
+        "text_color": "red-500",
+        "title_bgColor": "red-200",
         "price": 70,
         "description": "Provide technology and digital resources to schools to enhance education for students.",
-        "bg_img": "https://example.com/education_bg.jpg"
+        "bg_img": "https://i.ibb.co/FDV2tBL/Syr-TN4c-AEc-YMmpay2-Of-T.webp"
     },
     {
         "id": 11,
         "category": "Clothing",
         "title": "Winter Coat Drive",
-        "bg_color": "#FFC0C0",
-        "text_color": "#000000",
-        "title_bgColor": "#FF9090",
+        "bg_color": "cyan-50",
+        "text_color": "cyan-500",
+        "title_bgColor": "cyan-200",
         "price": 25,
         "description": "Collect winter coats for those in need to stay warm during the cold season.",
-        "bg_img": "https://example.com/clothing_bg.jpg"
+        "bg_img": "https://i.ibb.co/swmk18K/Winter-Coat-Drive-banner.jpg"
     },
     {
         "id": 12,
         "category": "Food",
         "title": "Meals for the Elderly",
-        "bg_color": "#FFC0C0",
-        "text_color": "#FFFFFF",
-        "title_bgColor": "#FF9090",
+        "bg_color": "amber-50",
+        "text_color": "amber-500",
+        "title_bgColor": "amber-100",
         "price": 55,
         "description": "Provide nutritious meals to elderly individuals who may have difficulty accessing food.",
-        "bg_img": "https://example.com/food_bg.jpg"
+        "bg_img": "https://i.ibb.co/9Y2CZ4q/meal-prep.png"
     }
 ]
