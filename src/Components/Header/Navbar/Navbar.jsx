@@ -33,9 +33,9 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <Link to="/statistics">Home</Link>
-                <Link to="/applied-jobs">Donation</Link>
-                <Link to="/blog">Statistics</Link>
+                <Link to="/">Home</Link>
+                <Link to="/donation">Donation</Link>
+                <Link to="/statistics">Statistics</Link>
               </ul>
             </div>
             <Link to='/' className="p-2 rounded-lg text-2xl duration-500 text-black hover:bg-black hover:text-white">Donation</Link>

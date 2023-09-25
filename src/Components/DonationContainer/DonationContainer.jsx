@@ -4,6 +4,7 @@ import Card from '../DonationsCard/Card';
 import { useState } from 'react';
 
 const DonationContainer = ({ donations, search }) => {
+
   const [showAll, setShowAll] = useState(false);
 
   let donationsToShow = [];
@@ -18,33 +19,42 @@ const DonationContainer = ({ donations, search }) => {
     donationsToShow = donations;
   }
 
-  
+  let s = ''
+  if(search){
+     s = search.toUpperCase();
+  }
+ 
+
+console.log(s);
 
   return (
-    <div className="container mx-auto">
-      <div className="grid lg:grid-cols-4 gap-5 my-10">
+    <div className="container mx-auto my-10 space-y-5">
+      <h1 className='text-5xl text-center'>{`${search ? s : 'All'}`}</h1>
+      <div className="grid lg:grid-cols-4 gap-5 ">
         {donationsToShow.map((donation, idx) => (
           <Card key={idx} donation={donation}></Card>
         ))}
       </div>
       <div className="flex justify-center my-5">
-        {donationsToShow.length < `${search ? 3 : 9}` && (
-          <button
-            className="btn btn-primary"
-            onClick={() => {
-              setShowAll(true);
-            }}
-          >
-            Show All
-          </button>
-        )}
+        {donationsToShow.length !== 0 &&
+          donationsToShow.length < `${search ? 3 : 9}` && (
+            <button
+              className="btn btn-primary"
+              onClick={() => {
+                setShowAll(true);
+              }}
+            >
+              Show All
+            </button>
+          )}
       </div>
     </div>
   );
 };
 
 DonationContainer.propTypes = {
-    donations: PropTypes.array.isRequired
+  donations: PropTypes.array.isRequired,
+  search: PropTypes.string
 };
 
 export default DonationContainer;
