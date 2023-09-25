@@ -17,7 +17,7 @@ const Card = ({donation}) => {
             <img
               src={bg_img}
               alt="Shoes"
-              className="h-[250px] w-[450px] object-cover "
+              className="md:h-[250px] md:w-[450px] object-cover "
             />
           </figure>
           <div className="card-body">

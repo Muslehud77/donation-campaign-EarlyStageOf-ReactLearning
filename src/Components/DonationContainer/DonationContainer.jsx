@@ -28,7 +28,7 @@ const DonationContainer = ({ donations, search }) => {
 console.log(s);
 
   return (
-    <div className="container mx-auto my-10 space-y-5">
+    <div className="container px-10 md:px-0 mx-auto my-10 space-y-5">
       <h1 className='text-5xl text-center'>{`${search ? s : 'All'}`}</h1>
       <div className="grid lg:grid-cols-4 gap-5 ">
         {donationsToShow.map((donation, idx) => (
