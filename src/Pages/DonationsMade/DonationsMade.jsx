@@ -47,7 +47,7 @@ const DonationsMade = () => {
                     onClick={() => {
                       setShowAll(true);
                     }}
-                    className="btn btn-primary"
+                    className="btn bg-cyan-300"
                   >
                     Show All
                   </button>

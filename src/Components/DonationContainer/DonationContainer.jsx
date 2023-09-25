@@ -25,7 +25,7 @@ const DonationContainer = ({ donations, search }) => {
   }
  
 
-console.log(s);
+
 
   return (
     <div className="container px-10 md:px-0 mx-auto my-10 space-y-5">
@@ -39,7 +39,7 @@ console.log(s);
         {donationsToShow.length !== 0 &&
           donationsToShow.length < `${search ? 3 : 9}` && (
             <button
-              className="btn btn-primary"
+              className="btn bg-cyan-300"
               onClick={() => {
                 setShowAll(true);
               }}

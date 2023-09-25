@@ -1,5 +1,5 @@
 import { Link, NavLink, useLocation,  } from "react-router-dom";
-
+import logo from '../../../../assets/logo/Logo.png'
 
 const Navbar = () => {
   const navigation = useLocation()
@@ -38,7 +38,15 @@ const Navbar = () => {
                 <Link to="/statistics">Statistics</Link>
               </ul>
             </div>
-            <Link to='/' className="p-2 rounded-lg text-2xl duration-500 text-black hover:bg-black hover:text-white">Donation</Link>
+            <div>
+              <Link to="/" className="">
+                <img
+                  className="w-36 duration-500 hover:p-1 -ml-5"
+                  src={logo}
+                  alt=""
+                />
+              </Link>
+            </div>
           </div>
           <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal px-1 gap-5 mr-5">
