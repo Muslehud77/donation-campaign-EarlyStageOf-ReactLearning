@@ -12,11 +12,11 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
-        errorElement: <ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>, 
         children: [
             {
                 path: '/',
-                loader: () => fetch('donation.json'), 
+                loader: () => fetch('/donation.json'), 
                 element: <Home></Home>
             },
             {
@@ -26,15 +26,16 @@ const router = createBrowserRouter([
             },
             {
                 path: '/donationdescription/:id',
+                element: <DonationDescription/>,
                 loader: async ({params}) => {
-                    const res = await fetch('donation.json')
+                    const res = await fetch('/donation.json')
                     const data = await res.json()
                     const donation = data.find(d=> d.id == params.id)
 
                     return donation
 
                 },
-                element: <DonationDescription/>
+                
             },
             {
                 path: '/donation',

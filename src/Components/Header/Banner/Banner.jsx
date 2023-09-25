@@ -1,13 +1,11 @@
 import { BiSearchAlt } from "react-icons/bi";
 
-const Banner = () => {
+const Banner = ({ setSearch }) => {
 
-  const handleSubmit = e => {
-    
-    e.preventDefault()
-    console.log(e.target.search.value)
-  }
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSearch(e.target.search.value);
+  };
 
   return (
     <div className="bg-cyan-100 bg-opacity-40">

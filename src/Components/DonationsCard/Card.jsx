@@ -1,14 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Card = ({donation}) => {
-    const {title,bg_img,title_bgColor,text_color,bg_color,category} = donation
+    const {id,title,bg_img,title_bgColor,text_color,bg_color,category} = donation
 
-    console.log(title_bgColor,text_color,bg_color)
+
     
     return (
-      <div>
-        <div className={`card w-96 bg-${bg_color} shadow-xl`}>
+      <Link to={`/donationdescription/${id}`}>
+        <div
+          style={{ background: `${bg_color}`, color: `${text_color}` }}
+          className={`card`}
+        >
           <figure>
             <img
               src={bg_img}
@@ -18,14 +22,15 @@ const Card = ({donation}) => {
           </figure>
           <div className="card-body">
             <p
+              style={{ background: `${title_bgColor}`, color: `${text_color}` }}
               className={`bg-${title_bgColor} w-min p-2 font-semibold rounded-lg text-${text_color}`}
             >
               {category}
             </p>
-            <h2 className={`card-title text-${text_color}`}>{title}</h2>
+            <h2 className={`card-title`}>{title}</h2>
           </div>
         </div>
-      </div>
+      </Link>
     );
 };
 
