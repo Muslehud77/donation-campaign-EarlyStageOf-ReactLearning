@@ -23,7 +23,7 @@ const Card = ({donation}) => {
           <div className="card-body">
             <p
               style={{ background: `${title_bgColor}`, color: `${text_color}` }}
-              className={`bg-${title_bgColor} w-min p-2 font-semibold rounded-lg text-${text_color}`}
+              className={` w-min p-2 font-semibold rounded-lg`}
             >
               {category}
             </p>

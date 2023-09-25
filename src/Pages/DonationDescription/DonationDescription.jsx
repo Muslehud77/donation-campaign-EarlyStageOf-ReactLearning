@@ -1,12 +1,51 @@
 
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useLocalStorage } from '@uidotdev/usehooks';
 import { useLoaderData } from 'react-router-dom';
 
 const DonationDescription = () => {
     const donation = useLoaderData()
     const {id,title,bg_img,text_color,price,description} = donation
-    // const [donate,setDonate] = 
+    const [donate,setDonate] = useLocalStorage('donationRecords',[])
 
+    const handleDonations = () => {
+        const isExist = donate.find(d => d == id)
+        if(!isExist) {
+             const record = [...donate, id];
+             setDonate(record);
+             success();
+        }else{
+            error()
+        }
+       
+    }
+
+    const success = () =>{
+        toast.success(`Successfully donated for ${title}!`, {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+    } 
+
+    const error = () => {
+        toast.error(`Already Donated for ${title}!`, {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+    }
    
     return (
       <div className="mb-32">
@@ -19,6 +58,7 @@ const DonationDescription = () => {
                   <button
                     style={{ background: `${text_color}` }}
                     className="btn w-36 text-base ml-10 text-white border-none"
+                    onClick={handleDonations}
                   >
                     Donate {price}$
                   </button>
@@ -31,6 +71,18 @@ const DonationDescription = () => {
             </div>
           </div>
         </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </div>
     );
 };

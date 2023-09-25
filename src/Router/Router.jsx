@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
-        errorElement: <ErrorPage></ErrorPage>, 
+        // errorElement: <ErrorPage></ErrorPage>, 
         children: [
             {
                 path: '/',
@@ -39,6 +39,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/donation',
+                loader: () => fetch('/donation.json'),
                 element: <DonationsMade></DonationsMade>
             }
         ]

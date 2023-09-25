@@ -22,7 +22,10 @@ const Home = () => {
     return (
       <div>
         <Banner setSearch={setSearch}></Banner>
-        <DonationContainer donations={donationsToShow}></DonationContainer>
+        <DonationContainer
+          search={search}
+          donations={donationsToShow}
+        ></DonationContainer>
       </div>
     );
 };
