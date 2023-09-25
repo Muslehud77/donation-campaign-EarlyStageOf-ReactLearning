@@ -4,6 +4,9 @@ import logo from '../../../../assets/logo/Logo.png'
 const Navbar = () => {
   const navigation = useLocation()
 
+  const handleReload = () =>{
+   navigation.pathname === '/' && window.location.reload(false);
+  }
     return (
       <div className="">
         <div
@@ -39,7 +42,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div>
-              <Link to="/" className="">
+              <Link to="/" className="" onClick={handleReload}>
                 <img
                   className="w-36 duration-500 hover:p-1 -ml-5"
                   src={logo}
@@ -59,6 +62,7 @@ const Navbar = () => {
                     : "p-2 rounded-lg duration-500 hover:bg-gray-400 hover:text-white hover:font-semibold hover:p-4"
                 }
                 to="/"
+                onClick={handleReload}
               >
                 Home
               </NavLink>
