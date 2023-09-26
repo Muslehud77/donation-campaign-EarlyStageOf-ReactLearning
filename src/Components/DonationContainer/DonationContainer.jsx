@@ -19,17 +19,15 @@ const DonationContainer = ({ donations, search }) => {
     donationsToShow = donations;
   }
 
-  let s = ''
-  if(search){
-     s = search.toUpperCase();
-  }
- 
+
 
 
 
   return (
     <div className="container px-10 md:px-0 mx-auto my-10 space-y-5">
-      <h1 className='text-5xl text-center'>{`${search ? s : 'All'}`}</h1>
+      <h1 className="text-5xl text-center capitalize">{`${
+        search ? search : "All"
+      }`}</h1>
       <div className="grid lg:grid-cols-4 gap-5 ">
         {donationsToShow.map((donation, idx) => (
           <Card key={idx} donation={donation}></Card>

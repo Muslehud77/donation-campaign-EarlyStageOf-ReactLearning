@@ -24,11 +24,18 @@ const Banner = ({ setSearch }) => {
           <div>
             <form onSubmit={handleSubmit} className="relative" action="">
               <input
+              list="site-list"
                 name="search"
                 type="text"
                 placeholder="Search here"
                 className="input border-gray-700 placeholder:text-black input-bordered w-full max-w-xs text-black"
               />
+              <datalist id="site-list">
+                <option value="food"></option>
+                <option value="health"></option>
+                <option value="education"></option>
+                <option value="clothing"></option>
+              </datalist>
               <button className="absolute top-3 right-1">
                 <BiSearchAlt className="text-3xl"></BiSearchAlt>
               </button>

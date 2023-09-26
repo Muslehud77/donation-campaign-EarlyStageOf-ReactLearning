@@ -34,7 +34,7 @@ const DonationsMade = () => {
           <title>Donation Campaign | Donation</title>
         </Helmet>
         {showDonations.length > 0 ? (
-          <div className="lg:mt-10">
+          <div className={`lg:mt-10 ${showAll || "lg:h-screen"} `}>
             <h1 className="text-5xl text-center font-semibold">Donations</h1>
             <div className="">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 container mx-auto my-5 px-2 ">
