@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import getStoredItem from "../../LocalStorage/LocalStorage";
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer, XAxis, Tooltip, Legend } from "recharts";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -65,6 +66,9 @@ const renderCustomizedLabel = ({
 
   return (
     <div className=" flex md:h-screen flex-col justify-center items-center">
+      <Helmet>
+        <title>Donation Campaign | Statistics</title>
+      </Helmet>
       <h1 className="text-5xl">Statistics</h1>
       <div className="">
         <PieChart width={400} height={400}>

@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import Banner from '../../Components/Header/Banner/Banner';
 import DonationContainer from '../../Components/DonationContainer/DonationContainer';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     const donations = useLoaderData()
@@ -21,6 +22,9 @@ const Home = () => {
  
     return (
       <div>
+        <Helmet>
+          <title>Donation Campaign | Home</title>
+        </Helmet>
         <Banner setSearch={setSearch}></Banner>
         <DonationContainer
           search={search}

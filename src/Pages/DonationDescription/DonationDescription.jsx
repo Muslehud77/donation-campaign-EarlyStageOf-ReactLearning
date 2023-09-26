@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useLocalStorage } from '@uidotdev/usehooks';
 import { useLoaderData } from 'react-router-dom';
+import { Helmet } from "react-helmet-async";
 
 const DonationDescription = () => {
     const donation = useLoaderData()
@@ -49,6 +50,9 @@ const DonationDescription = () => {
    
     return (
       <div className="mb-32">
+        <Helmet>
+          <title>Donation Campaign | {title}</title>
+        </Helmet>
         <div className="flex flex-col justify-center items-center">
           <div className="w-8/12">
             <div className="relative">
